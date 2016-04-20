@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="exist-xqj-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Baixades/lib/exist-xqj-1.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/Baixades/lib/xqj2-0.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/Baixades/lib/xqjapi.jar!/" />
+      <root url="file://$PROJECT_DIR$/.." />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+      <root url="file://$PROJECT_DIR$/../Pasqua/src" />
+      <root url="file://$PROJECT_DIR$/../caquita/src" />
+      <root url="file://$PROJECT_DIR$/../empaquetar/src" />
+      <root url="file://$PROJECT_DIR$/../untitled/src" />
+      <root url="file://$PROJECT_DIR$/../untitled1/src" />
+      <root url="file://$PROJECT_DIR$/.." />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/.." recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/.." recursive="false" type="SOURCES" />
+  </library>
+</component>
