@@ -1,59 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <dades>
     <clients>
-        <client>
-            <dni>48089748z</dni>
-            <nom>uRi</nom>
-            <cognom>Cuñado</cognom>
-        </client>
-        <client>
-            <dni>48089748z</dni>
-            <nom>uRi</nom>
-            <cognom>Cuñado</cognom>
-        </client>
     </clients>
     <empleats>
-        <empleat>
-            <id>48089748z</id>
-            <nom>uRi</nom>
-            <cognom>Cuñado</cognom>
-            <sou>3200€</sou>
-            <anys_treballats>3</anys_treballats>
-        </empleat>
-        <empleat>
-            <id>48089748z</id>
-            <nom>uRi</nom>
-            <cognom>Cuñado</cognom>
-            <sou>3200€</sou>
-            <anys_treballats>3</anys_treballats>
-        </empleat>
+
     </empleats>
     <factures>
         <factura>
-            <dni_client></dni_client>
-            <id_producte>0</id_producte>
-            <preu_unitat>3€</preu_unitat>
-            <preu_total>30€</preu_total>
+            <dni_client>47419119l</dni_client>
+            <id_producte>4</id_producte>
+            <preu_unitat>500€</preu_unitat>
+            <preu_total>1000€</preu_total>
             <iva>21%</iva>
         </factura>
         <factura>
-            <dni_client></dni_client>
-            <id_producte>0</id_producte>
-            <preu_unitat>3€</preu_unitat>
-            <preu_total>30€</preu_total>
+            <dni_client>47419119l</dni_client>
+            <id_producte>3</id_producte>
+            <preu_unitat>600€</preu_unitat>
+            <preu_total>600€</preu_total>
             <iva>21%</iva>
         </factura>
     </factures>
     <cataleg>
         <producte>
+            <id>1</id>
+            <nom>Samsung Galaxy 6</nom>
+            <preu>800€</preu>
+            <stock>230</stock>
+        </producte>
+        <producte>
+            <id>2</id>
+            <nom>Iphone 6s</nom>
+            <preu>600€</preu>
+            <stock>230</stock>
+        </producte>
+        <producte>
             <id>3</id>
-            <nom>iPhone6S</nom>
-            <preu>700€</preu>
-            <stock>230.000</stock>
+            <nom>iPhone6S Plus</nom>
+            <preu>800€</preu>
+            <stock>230</stock>
         </producte>
         <producte/>
         <producte>
-            <nom>SANDRA</nom>
+            <id>4</id>
+            <nom>Samsung Galaxy Note 4</nom>
+            <preu>500€</preu>
+            <stock>200</stock>
         </producte>
     </cataleg>
 </dades>

@@ -1,11 +1,8 @@
 import generated.ClientType;
 import generated.DadesType;
 import generated.EmpleatType;
-import generated.ProducteType;
-
 import javax.xml.bind.*;
 import java.io.File;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -15,13 +12,7 @@ public class DaoSobreDao {
     private static DadesType database;
     private static JAXBContext context;
     private static File databaseFile = new File("dades.xml");
-/*
 
-Consultar empleats pels
-diferents camps (edat, sou, anys treballats).
-Buscar factures en una franja concreta de
-temps. Consultar totes les factures d'un client, ...
- */
 
     /**
      * Configuració jaxB
@@ -139,5 +130,75 @@ temps. Consultar totes les factures d'un client, ...
         return eliminat;
     }
 
+    /**
+     * consultarEmpleats Metode per consultar els emplats.
+     */
+    public static void consultarEmpleats(){
+        //diferents camps (edat, sou, anys treballats).
+        Scanner teclat = new Scanner(System.in);
+        System.out.println("Per quin camp vols consultar el empleats ?");
+        System.out.println("1. sou");
+        System.out.println("2. anys treballats");
+        System.out.println("3. id");
+
+        String menu = teclat.nextLine();
+        switch (menu){
+            case "1":
+                System.out.println(" Diguem el sou ");
+                String sou = teclat.nextLine();
+                for(int i =0 ; i< database.getEmpleats().getEmpleat().size(); i++ ){
+                    if(database.getEmpleats().getEmpleat().get(i).getSou().equals(sou)){
+                        System.out.println(" - "+database.getEmpleats().getEmpleat().get(i).getId()+" nom :"+ database.getEmpleats().getEmpleat().get(i).getNom() +" "+database.getEmpleats().getEmpleat().get(i).getCognom()+" anys treballats: "+database.getEmpleats().getEmpleat().get(i).getAnysTreballats());
+                        break;
+                    }
+                }
+                break;
+            case "2":
+                System.out.println(" Diguem els anys treballats ");
+                String anystreballats = teclat.nextLine();
+                for(int i =0 ; i< database.getEmpleats().getEmpleat().size(); i++ ){
+                    if(database.getEmpleats().getEmpleat().get(i).getAnysTreballats().equals(anystreballats)){
+                        System.out.println(" - "+database.getEmpleats().getEmpleat().get(i).getId()+" nom :"+ database.getEmpleats().getEmpleat().get(i).getNom() +" "+database.getEmpleats().getEmpleat().get(i).getCognom()+" Sou: "+database.getEmpleats().getEmpleat().get(i).getSou());
+                        break;
+                    }
+                }
+                break;
+            case "3":
+                System.out.println(" Diguem el id ");
+                String id = teclat.nextLine();
+                for(int i =0 ; i< database.getEmpleats().getEmpleat().size(); i++ ){
+                    if(database.getEmpleats().getEmpleat().get(i).getId().equals(id)){
+                        System.out.println(" -  nom :"+ database.getEmpleats().getEmpleat().get(i).getNom() +" "
+                                +database.getEmpleats().getEmpleat().get(i).getCognom()+" Sou: "+database.getEmpleats().getEmpleat().get(i).getSou()
+                                +" Any treballats :"+database.getEmpleats().getEmpleat().get(i).getAnysTreballats());
+                        break;
+                    }
+                }
+                break;
+
+            default:
+                System.out.println("Aquesta opció no existeix");
+                break;
+        }
+    }
+
+    /**
+     * Metode per consultar factures d'un client.
+     */
+    public static void consultarFacturesDeUnClient(){
+        Scanner teclat = new Scanner(System.in);
+        System.out.println("Digues el dni del client que vols veure la seva factura ?");
+        String dni = teclat.nextLine();
+        System.out.println("El client amb dni "+dni+" té les factures : ");
+        for(int i =0 ; i< database.getFactures().getFactura().size();i++){
+            if(database.getFactures().getFactura().get(i).getDniClient().equals(dni)){
+                System.out.println(" - Producte : "+database.getFactures().getFactura().get(i).getIdProducte()
+                        + " Preu unitat :"+database.getFactures().getFactura().get(i).getPreuUnitat()
+                        +" Preu total"+database.getFactures().getFactura().get(i).getPreuTotal()
+                        +" iva"+database.getFactures().getFactura().get(i).getIva());
+            }
+        }
+
+    }
 
 }
