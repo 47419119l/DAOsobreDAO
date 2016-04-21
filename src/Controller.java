@@ -18,9 +18,6 @@ public class Controller {
         //Creo un repositori on s'anira guardan la informacio
         dao.createColeccion("dadesempresa");
 
-
-
-
         do {
             System.out.println("1.Donar de alta empleats");
             System.out.println("2.Donar de alta clients");
@@ -67,6 +64,7 @@ public class Controller {
             }
         }while(menu!=7);
 
+        System.out.println();
         dao.closeConexion();
 
 

@@ -135,7 +135,6 @@ public class DaoSobreDao {
      * consultarEmpleats Metode per consultar els emplats.
      */
     public static void consultarEmpleats(){
-        //diferents camps (edat, sou, anys treballats).
         Scanner teclat = new Scanner(System.in);
         System.out.println("Per quin camp vols consultar el empleats ?");
         System.out.println("1. sou");

@@ -11,6 +11,11 @@
             <nom>sandra</nom>
             <cognom>altafaja</cognom>
         </client>
+        <client>
+            <dni>2</dni>
+            <nom>adria</nom>
+            <cognom>tome</cognom>
+        </client>
     </clients>
     <empleats>
         <empleat>
