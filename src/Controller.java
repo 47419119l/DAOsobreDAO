@@ -19,13 +19,24 @@ public class Controller {
         dao.createColeccion("dadesempresa");
 
         do {
-            System.out.println("1.Donar de alta empleats");
-            System.out.println("2.Donar de alta clients");
-            System.out.println("3.Eliminar empleats");
-            System.out.println("4.Eliminar clients");
-            System.out.println("5.Consultat empleats");
-            System.out.println("6.Consultar factures d'un client");
-            System.out.println("7. Fi del programa");
+            System.out.println("---------------------------------------");
+            System.out.println("---------------------------------------");
+            System.out.println("| 1.Donar de alta empleats            |");
+            System.out.println("---------------------------------------");
+            System.out.println("| 2.Donar de alta clients             |");
+            System.out.println("---------------------------------------");
+            System.out.println("| 3.Eliminar empleats                 |");
+            System.out.println("---------------------------------------");
+            System.out.println("| 4.Eliminar clients                  |");
+            System.out.println("---------------------------------------");
+            System.out.println("| 5.Consultat empleats                |");
+            System.out.println("---------------------------------------");
+            System.out.println("| 6.Consultar factures d'un client    |");
+            System.out.println("---------------------------------------");
+            System.out.println("| 7. Fi del programa                  |");
+            System.out.println("---------------------------------------");
+            System.out.println("---------------------------------------");
+
             menu = teclat.nextInt();
             switch (menu) {
                 case 1:
