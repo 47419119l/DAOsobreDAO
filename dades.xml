@@ -20,6 +20,13 @@
             <sou>3</sou>
             <anys_treballats>3</anys_treballats>
         </empleat>
+        <empleat>
+            <id>1</id>
+            <nom>pepe</nom>
+            <cognom>pepe</cognom>
+            <sou>3</sou>
+            <anys_treballats>3</anys_treballats>
+        </empleat>
     </empleats>
     <factures>
         <factura>
