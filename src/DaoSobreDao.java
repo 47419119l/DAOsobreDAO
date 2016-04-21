@@ -13,7 +13,6 @@ public class DaoSobreDao {
     private static JAXBContext context;
     private static File databaseFile = new File("dades.xml");
 
-
     /**
      * Configuració jaxB
      */
@@ -103,7 +102,8 @@ public class DaoSobreDao {
 
        for(int i =0 ; i< database.getClients().getClient().size(); i++ ){
             if(database.getClients().getClient().get(i).getDni().equals(dni)){
-                database.getClients().getClient().remove(i);
+                ClientType c = database.getClients().getClient().get(i);
+                database.getClients().getClient().remove(c);
                 eliminat=true;
                 break;
             }
@@ -122,7 +122,8 @@ public class DaoSobreDao {
         String id= teclat.nextLine();
         for(int i =0 ; i< database.getEmpleats().getEmpleat().size(); i++ ){
             if(database.getEmpleats().getEmpleat().get(i).getId().equals(id)){
-                database.getEmpleats().getEmpleat().remove(i);
+                EmpleatType empleatType = database.getEmpleats().getEmpleat().get(i);
+                database.getEmpleats().getEmpleat().remove(empleatType);
                 eliminat=true;
                 break;
             }

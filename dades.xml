@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <dades>
     <clients>
+        <client>
+            <dni></dni>
+            <nom></nom>
+            <cognom></cognom>
+        </client>
+        <client>
+            <dni>47419119l</dni>
+            <nom>sandra</nom>
+            <cognom>altafaja</cognom>
+        </client>
     </clients>
     <empleats>
-
+        <empleat>
+            <id>47419119l</id>
+            <nom>sandra</nom>
+            <cognom>altafaja</cognom>
+            <sou>3</sou>
+            <anys_treballats>3</anys_treballats>
+        </empleat>
     </empleats>
     <factures>
         <factura>
